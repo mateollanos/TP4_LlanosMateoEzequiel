@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TP4</title>
+	  <!--Import Google Icon Font-->
+     <!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      Import materialize.css
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+	  <link rel="stylesheet" data-th-href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header class="text-dark py-4" style="background-color: #a2cadf;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-3">
+                <img src="/images/facultad.png" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-6 text-center">
+                <h1 class="fw-bold">Facultad de Ingenieria</h1>
+            </div>
+            <div class="col-3 text-start">
+                <h5 class="m-0">Les damos la bienvenida a la Universidad Nacional de Jujuy!</h5>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+	<div class="container">
+		<header>
+	    	<div data-th-replace="~{fragments/header::navbar}">
+	    		
+	    	</div>
+		</header>
+		<div class="row">
+		
+			<main class="col-9">
+				<section id="1">
+					<div id="carouselExampleCaptions" class="carousel slide">
+					  <div class="carousel-inner">
+					    <div class="carousel-item active">
+					    	<div class="row align-items-center">
+					    	<div class="col-3">
+					    		<img src="/images/unjuLogo.png" class="img-fluid" alt="logo de unju">
+					    	</div>
+					    	<div class="col-9 text-fluid">
+					    		<p>La Universidad Nacional de Jujuy es una universidad pública argentina 
+					      		ubicada en San Salvador de Jujuy, provincia de Jujuy. Fundada en 1973, 
+					      		cuenta con cuatro facultades y cinco institutos, donde cursan sus carreras 
+					      		alrededor de 25 000 estudiantes. Hay 40 mil usuarios de alumnos en UNJu Virtual.</p>
+					    	</div>
+					      	</div>
+					    </div>
+					</div>
+					</div>
+				</section>
+				<br>
+				<section id="4">
+					<h5>Noticias</h5>
+					<div class="accordion" id="accordionExample">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					        LUEGO DE LA REUNIÓN CON AUTORIDADES NACIONALES EL CIN EMITIÓ UN COMUNICADO
+					      </button>
+					    </h2>
+					    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+					      <div class="accordion-body row align-items-center">
+					      	<div class="col-3">
+					      		<img src="/images/comite.png" alt="Imagen 1" class="img-fluid">
+					      	</div>
+					      	<div class="col-9">
+					      		 El Comité Ejecutivo ampliado del Consejo Interuniversitario Nacional (CIN), se reunió con el Secretario de Educación, Carlos Torrendell y el subsecretario de Políticas Universitarias, Alejandro Álvarez para retomar la agenda de trabajo en torno a la actualización del presupuesto universitario 2024.
+					      	</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="accordion-item">
+					    <h2 class="accordion-header">
+					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					        DEL 21 AL 25 DE OCTUBRE ARGENTINA SERÁ SEDE EL 8° SIMPOSIO INTERNACIONAL DE 
+					        BIOFUMIGACIÓN, ABONOS VERDES, Y CULTIVOS DE COBERTURA
+					      </button>
+					    </h2>
+					    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					      <div class="accordion-body row align-items-center">
+					      	<div class="col-3">
+					      		<img alt="Imagen 2" src="/images/verde.png" class="img-fluid">
+					      	</div>
+					      	<div class="col-9">
+					      		Esta iniciativa, que se desarrolla bajo el lema “Plantas al servicio de la salud, del suelo y los cultivos”, es un espacio de actualización acerca de las tendencias mundiales en estas técnicas, que, a través del uso de plantas y sus subproductos permiten mejorar la sanidad y calidad del suelo y los cultivos.
+					      	</div>
+					      </div>
+					    </div>
+					  </div>
+					  <div class="accordion-item">
+					    <h2 class="accordion-header">
+					      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					        INVITAN A PARTICIPAR DEL CICLO DE TALLERES "SAN ANTONIO GASTRONÓMICO"
+					      </button>
+					    </h2>
+					    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+					      <div class="accordion-body row align-items-center">
+					      	<div class="col-3">
+					      		<img alt="Imagen 3" src="/images/talleres.png" class="img-fluid">
+					      	</div>
+					      	<div class="col-9">
+					      		El equipo de trabajo del Proyecto de Extensión "Fortalecimiento del Sector Turístico de Zona Valles" de la FHyCS junto a la Dirección de Turismo de la localidad de San Antonio, dictarán el ciclo de talleres "San Antonio Gastronómico" destinado a emprendedores gastronómicos de la zona
+					      	</div>
+					      </div>
+					    </div>
+					  </div>
+					</div>			
+				</section>
+			</main>
+		
+			<aside class="col-3">
+   			    <div class="card">
+        			<div class="card-body">
+            			<h5 class="card-title">Podría interesarte:</h5>
+            			<ul class="list-group list-group-flush">
+              				<li class="list-group-item"><a href="#" class="card-link">Calendario Académico</a></li>
+                			<li class="list-group-item"><a href="#" class="card-link">Biblioteca</a></li>
+                		</ul>
+        			</div>
+               </div>
+			</aside>
+
+		</div>
+		<footer>
+		<br>
+			<div data-th-replace="~{fragments/header::footer}">
+	    		
+	    	</div>
+		</footer>
+	</div>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+	<script data-th-src="@{/webjars/bootstrap/5.3.3/js/bootstrap.bundle.min.js}"></script>
+</body> 
+</html>
