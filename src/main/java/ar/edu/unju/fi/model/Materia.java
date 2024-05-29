@@ -11,7 +11,4 @@ public class Materia {
 	private String modalidad;
 	private Docente docente;
 	private Carrera carrera;
-
-	
-
 }
