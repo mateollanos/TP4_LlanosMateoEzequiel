@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.ModelAndView;
-
 import ar.edu.unju.fi.collections.ListadoCarreras;
 import ar.edu.unju.fi.model.Carrera;
 
@@ -43,6 +42,37 @@ public class CarreraController {
 		modelView.addObject("listadoCarreras", ListadoCarreras.listarCarreras());	
 		
 		return modelView;		
+	}
+	
+	@GetMapping("/modificarCarrera/{codigo}")
+	public ModelAndView editCarrera(@PathVariable(name="codigo") String codigo) {
+		//buscar
+		Carrera carreraParaModificar = ListadoCarreras.buscarCarreraPorCodigo(codigo);
+		
+		//mostrar el nuevo formulario
+		ModelAndView modelView = new ModelAndView("formCarrera");
+		modelView.addObject("nuevaCarrera", carreraParaModificar);	
+		modelView.addObject("flag", true);
+		
+		return modelView;		
 		}
 	
+	@PostMapping("/modificarCarrera")
+	public ModelAndView updateCarrera(@ModelAttribute("nuevaCarrera") Carrera carreraModificada) {	
+		// Modifica la carrera
+		ListadoCarreras.modificarCarrera(carreraModificada);
+		
+		// Muestra el listado
+		ModelAndView modelView = new ModelAndView("listaDeCarreras");
+		modelView.addObject("listadoCarreras", ListadoCarreras.listarCarreras());	
+		
+		return modelView;		
+	}
+	@GetMapping("/carreras")
+	public ModelAndView showCarreras() {
+		//mostrar el listado
+		ModelAndView modelView = new ModelAndView("listaDeCarreras");
+		modelView.addObject("listadoCarreras", ListadoCarreras.listarCarreras());	
+		return modelView;		
+	}
 }

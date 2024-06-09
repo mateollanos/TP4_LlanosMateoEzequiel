@@ -5,42 +5,87 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary" data-th-fragment="navbar">
-  	<div class="container-fluid">
-    <a class="navbar-brand" href="#">Facultad de Ingenieria </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#1">INICIO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ACERCA DE</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            CARRERAS
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Ingenieria informática</a></li>
-            <li><a class="dropdown-item" href="#">Ingenieria en minas</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Ingenieria química</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#4">NOTICIAS</a>
-        </li>
-    </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-    </div>
-  </div>
-</nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		data-th-fragment="navbar">
+		<div class="container-fluid">
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="/#1">INICIO</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">ACERCA
+							DE</a></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" role="button"
+						data-bs-toggle="dropdown" aria-expanded="false"> CARRERAS </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Ingenieria
+									informática</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Ingenieria en
+									minas</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Ingenieria química</a></li>
+						</ul></li>
+					<li class="nav-item"><a class="nav-link" href="/#4">NOTICIAS</a>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle fw-bolder text-info-emphasis"
+						href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false"> Carreras </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/formularioCarrera">Formulario</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/carreras">Listado</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle fw-bolder text-info-emphasis"
+						href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false"> Docentes </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/formularioDocente">Formulario</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/docentes">Listado</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle fw-bolder text-info-emphasis"
+						href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false"> Alumnos </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/formularioAlumno">Formulario</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/alumnos">Listado</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle fw-bolder text-info-emphasis"
+						href="#" role="button" data-bs-toggle="dropdown"
+						aria-expanded="false"> Materias </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/formularioMateria">Formulario</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item fw-bolder text-info-emphasis"
+								href="/materias">Listado</a></li>
+						</ul>
+				    </li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Buscar"
+						aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Buscar</button>
+				</form>
+			</div>
+		</div>
+	</nav>
 	<!-- <nav class="navbar" data-th-fragment="navbar">
     	<div class="nav-wrapper">
       	<a href="#" class="brand-logo">Logo</a>
@@ -62,29 +107,5 @@
 		    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
 	  	</ul>
   	</div> -->
-      <div class="container bg-secondary text-white" data-th-fragment="footer">
-      <br>
-       <div class="row">
-       		<div class="col-4">
-       			<h5 class="white-text">Contáctanos</h5>
-       			<p>E-MAIL: consultas@unju.edu.ar</p>
-       			<p>TELÉFONO: 0388 343-1234</p>
-       			<p>DIRECCIÓN: Av.Bolivia 1239</p>
-       			<p>San Salvador de Jujuy-Argentina</p>
-       		</div>
-         	<div class="col-4">
-            	<h5 class="white-text">Síguenos en redes:</h5>
-                	<p>	<a class="text-white fw-bold" href="https://www.facebook.com/universidadnacionaldejujuy/" target="_blank">Facebook</a> </p>
-                	<p> <a class="text-white fw-bold" href="https://x.com/i/flow/login?redirect_after_login=%2Fprensaunju" target="_blank">Twitter</a> </p>
-                	<p> <a class="text-white fw-bold" href="https://tv.unju.edu.ar/" target="_blank">Youtube</a> </p>
-            </div>
-            <div class="col-4 text-center">
-            	<img alt="logo" src="/images/unju1.png" class="img-fluid">
-                <p>&copy; 2024 Llanos Mateo Ezequiel.</p> 
-                <p> Todos los derechos reservados.</p>
-            </div>
-       </div>
-     </div>
-  
 </body>
 </html>
